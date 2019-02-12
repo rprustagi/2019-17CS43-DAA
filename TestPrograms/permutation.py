@@ -3,7 +3,10 @@ import sys
 
 def permutation(elems, list):
   if (len(elems) <= 1):
-    print(list + elems)
+    #print(list + elems)
+    for x in list + elems:
+      print(x, end=" ")
+    print("")
     return
   for i in range(len(elems)):
     subelems = elems.copy()
@@ -27,6 +30,6 @@ if (number < 0):
 # main program
 elems = []
 for i in range(1, number + 1):
-  elems.append(str(i))
+  elems.append(i)
 permutation(elems, [])
 exit()
