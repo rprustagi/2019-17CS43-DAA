@@ -29,7 +29,7 @@ if (number < 0):
 
 # main program
 elems = []
-for i in range(1, number + 1):
-  elems.append(i)
+for i in range(0, number):
+  elems.append(chr(ord('A')+i))
 permutation(elems, [])
 exit()
