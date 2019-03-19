@@ -1,0 +1,33 @@
+Assignment-1 (2019-H2-17CS43)
+Submission Due Date: 08-Mar-2019
+Allocation: Look at the exercise number against your group and do the corresponding programming assignment.
+
+Submission Details:
+  . You have to write the program from scratch. Any copy/paste from any other team (or internet sources) must be avoided. Any plagiarism will result in 0 marks. If any two teams are sharing the code i.e. one team has passed the code to other team and other team has modified it (e.g. variable name change etc., comment incorporation/deletion etc), this will be considered as plagiarism and both team will get ZERO marks.
+
+  . A program written in programming language of your choice (preferably Java since that is being used in the lab) to implement the assigned program. It is expected that program would be a single source code file and should be named as HA01Gnn (where Gnn is your group number) e.g. HA01G01.java, or HA01g02.py, HA01G11.c etc. In case there are more than program files (though unlikely) the main program should be named as above. This should be uploaded in the lexicographically smallest USN of the group.
+
+  . Your account for each student is created on the server 35.190.164.219 (Server on Google cloud). The account id is your usn in lowercase without the first digit ‘1’ e.g. ks17cs020, kg17cs023 etc. Please access it from any place in KSIT and change your password first. The access password is ‘algorithms’. Without changing the password, you will not be able to do any work on it. You can access it from home as well. To access from KSIT campus or home, use the command
+     ssh <usn>@35.190.164.219 e.g.
+     ssh ks17cs020@35.190.164.219
+
+     When asked for password, please enter ‘algorithms’ (without quote character).
+     It will ask you to change the password and please change the same. Do remember the same since if you lose it, it will be lot of extra pain for me to change the same.
+
+  . Assignment Submission consists of program(s) file(s), a README.txt file and a result.txt file for the given input. Provide any other relevant details such as test data which you have used to test your program. Your program should run on the server. After uploading the program, please ensure to execute the same on the server.
+
+  . The file README.txt  should contain following details:
+      . provide the group details
+      . how to execute the program with at least one example
+      . Description of how the program works
+      . Challenges/issues that you faced while writing such program and how did you address the same.
+
+  . The file RESULT.txt should contain the results with the test data and explanation of the result. Ensure to test your program with at least 3 different inputs and verify that it works for all inputs.
+
+  . No hardcoding of values must be used in the program. All inputs parameters should be specified at command line arguments. Do all the necessary validation and any invalid input should be rejected. Thus, program should work correctly when the parameter values are changed. The program should not crash on account of bad input parameter.
+
+  . All files related to assignment should be uploaded to 35.190.164.219:/home/<usn>/ha01. The implemented programs must be uploaded in the directory of smallest usn of the group. USN are to be compared lexicographically. To upload your assignment you use the following command from your  machine e.g.
+    scp HA01Gnn.java <usn>@35.190.164.219:/home/<usn>/ha01
+
+                    <-- end of Assignment instructions -->
+

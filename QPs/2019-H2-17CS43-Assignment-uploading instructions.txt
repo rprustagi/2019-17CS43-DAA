@@ -1,0 +1,51 @@
+Uploading of assignments.
+
+1. For each student an account has been created on CS Server with
+private IP : 10.200.0.111 (and public IP 202.72.79.36). Currently, it is accessible with private IP from KSIT college only. It is not accessible on public IP yet (it is expected to be accessible on public IP by Thursday close of Busness housl)
+
+2. The account id is your USN number in lower case after removing first digit ‘1’ i.e. the account id’s are ks17cs001, ks17cs002, ... and kg17cs002, kg17cs004 etc. For each account a subdirectory ha01 is also created
+
+3. The password for each account is ‘algorithms’ which you needs to change after first login. Unless you change the password, you will not be able to upload.
+
+4. To change the password, you need to ssh (login) into the machine. You can access this from the KSIT campus from any lab. The process for linux users and windows users is slightly different.
+
+5.Linux users:
+  . open the terminal windows
+
+$ ssh ks17cs002@10.200.0.111
+  ks17cs002@10.200.0.111's password:
+  Warning: No xauth data; using fake authentication data for X11 forwarding.
+  X11 forwarding request failed on channel 0
+  You are required to change your password immediately (root enforced)
+  WARNING: Your password has expired.
+  You must change your password now and login again!
+  Changing password for user ks17cs002.
+  Changing password for ks17cs002.
+  (current) UNIX password:
+
+6. At this point enter your current password i.e. ‘algorithms’ and the specify the new password which needs to be entered twice.
+
+7.logout from the server either by typing ‘exit’ or Ctrl-D.
+
+8. Windows users
+  Download and install putty from https://www.putty.org
+  putty software provides both ssh as well secure file transfer,.
+  Using putty.exe ssh (login) into the server and change the password
+
+9. Uploading the assignment for Linux/Mac Users
+  Go to the directory where your assignment file (e.g. HA01G01.java, or ha01g01.c etc is located). In the terminal window type the following
+  $ scp assignment.file userid@10.200.0.111:/home/userid/ha01
+  It will ask for your new password (which you have entered after changing it) and when successful, the assginment file woudl be uploaded. An example of the this is
+  $ scp HA01G01.java ks17cs002@10.200.0.111:/home/ks17cs002/ha01
+  $ scp README.txt ks17cs002@10.200.0.111:/home/ks17cs002/ha01
+
+10. When main assignment file is transferred, you should upload your test data if test data file is needed e.g. for assignment 6, 7, 8.
+
+11. After successful upload of the assignment file, login (ssh) into the server machine, and compile and run the program with required data. Generatete the output locally and save it in RESULT.txt file.
+
+12. Uploading the assignment for Windows Users
+Use the program pscp.exe or psftp.ext to upload the assignment into the your subdirectory ha01.
+
+Using putty.exe ssh into the server to login again, and run your assignment to ensure that progam runs as per your implementation and requirements.
+
+                <---- end ---->
