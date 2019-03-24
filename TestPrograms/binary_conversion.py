@@ -2,6 +2,7 @@
 import sys
 import math
 
+sys.argv=["abc", 10]
 # validation checks
 if (len(sys.argv) != 2):
   print("Usage: ", sys.argv[0], "<number>")
