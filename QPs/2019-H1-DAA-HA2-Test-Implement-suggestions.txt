@@ -1,0 +1,40 @@
+Test cases for assignments.
+Q1. Let N=32.
+  First division 16, 16.
+    Assume 16 is lighter (it may happen that defective ball is either lighter and so in lighter group, and balls in heavier group are same. Alternatively, defective ball is heavier and in the latter group).
+    Take the lighter group and repeat the process, If the both groups of 4 are equal, implies defective ball is heavier and in the heavier group. Then repeat the process for heavier group.
+    Thus total comparisons should be (logN+1)
+
+Q2. Expected comparison is logM and logN.
+  First objective is to find M (which is not known to main program).
+  Start with M=1 and check if X is <==A[M}.
+  IF not double M i.e. M=2, and check
+  keep doubling till you reach a situation where X <=A[M].
+  This will take you logM comparisons.
+  Once you know M, apply binary search to know if X is present.
+
+  Test case: Value of N=1000000, M=200.
+  Total comparisons required = 16 i.e. 2*log200.
+
+Q3. Take 3 divisions of array, say A1, A2, and A3.
+Merging of these 3 requires that for picking up each smallest element, we need to 3 comparisons e.g. a1<a2 and either a2<a3 or a1<a3. Since each list is of size n/3, the merging requires 3*n/3=n comparisons. Thus, your recurrence relation would be
+T(n)=3*T(n/3)+n which should give the answer as T(n)=nlogn (with log base as 3).
+Test it with N=1000000.
+
+Q4. Take the value of n=10, and m=10, and x=0.9 and compute. The polynomials as
+P(x)=0+x+2x^2+3x^3+...+10x^10
+Q(x)=10+9x+8x^2+7x^3+...+x^9
+
+Q5. Compute Fn for any number n>16 e.g. n=16
+Applying backward substitution, The matrix would become as
+[F(n-1) Fn = [F0 F1][0 1][0 1]...[0 1]
+                    [1 1][1 1]...[1 1]
+The matrices are repeated n times. Use divide and conquer for matrix multiplication in O(log n) time. then one more matrix multiplication and you get Fn.
+
+Q6. Take the time table for a day (e.g. Tuesday) of both sections of 2nd, 3rd and 4th semesters of CSE. Each class schedule has its start time and end time, and let K=4. Tweak some of the class times to 2 hours from general 1hr e.g. like our DAA Class. This approximately gives you 5 events for each section. Considering 6 sections, this gives you 30 events i.e. N=30, Taking K=6 (number of rooms), we will be able to schedule all the classes, Take K=5 or K=4 and check which classes can be scheduled.
+
+Q7. Take the above example where classroom becomes venues i.e. V1, V2, ..., v6.  and number of students present in the class becomes P1, .P2, ..., P6.
+Events are different subjects and assume that fee for each course is different. Consider that last 2 digits of course number is the fee.
+Consider M=10000, and see if college can collect this fee or 10000+x where x is the minimum amount possible.
+
+Q8, Q9, Q10. Take the given maze as the test case itself, assign different weights of transition points. Take different starting and end points e.g. b1-g5 (for that you need to break the corresponding walls) and test.
