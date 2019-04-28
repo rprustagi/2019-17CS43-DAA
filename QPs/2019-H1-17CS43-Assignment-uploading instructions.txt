@@ -1,7 +1,7 @@
 Uploading of assignments.
 
 1. For each student an account has been created on CS Server with
-private IP : 10.200.0.111 (and public IP 202.72.79.36). Currently, it is accessible with private IP from KSIT college only. It is not accessible on public IP yet (it is expected to be accessible on public IP by Thursday close of Busness housl)
+private IP : 10.200.0.111 (and public IP 202.62.79.36). Currently, it is accessible with private IP from KSIT college only. It is not accessible on public IP yet (it is expected to be accessible on public IP by Thursday close of Busness housl)
 
 2. The account id is your USN number in lower case after removing first digit ‘1’ i.e. the account id’s are ks17cs001, ks17cs002, ... and kg17cs002, kg17cs004 etc. For each account a subdirectory ha01 is also created
 
